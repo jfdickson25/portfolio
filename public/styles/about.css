@@ -1,0 +1,19 @@
+p {
+    padding: 5px;
+}
+
+.sectionRight {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #343a40;
+}
+
+.sectionLeft {
+    background-color: white;
+    border: 1px solid silver;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: -5px 5px 10px #343a40;
+}

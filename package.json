@@ -1,0 +1,21 @@
+{
+  "name": "jordandicksonportfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "index.js"
+  },
+  "author": "Jordan Dickson",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fontawesome": "^5.6.3",
+    "nodemon": "^2.0.6",
+    "start": "^5.1.0"
+  }
+}
