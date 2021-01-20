@@ -1,0 +1,6 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .experienceImg {
+        max-height: 100px;
+    }
+  }
