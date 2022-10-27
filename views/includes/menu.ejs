@@ -1,0 +1,24 @@
+
+<div id="menu">
+    <div id="about" class="menu-item">
+        <a class="<% if(active == "about") { %> active <% } else { %> inactive <% }%>" href="/about">ABOUT</a>
+    </div>
+    <div id="experience" class="menu-item">
+        <a class="<% if(active == "experience") { %> active <% } else { %> inactive <% }%>" href="/experience">EXPERIENCE</a>
+    </div>
+    <div id="home">
+        <p onclick="changeToHome()" id="jordan-header">Jordan Dickson</p>
+    </div>
+    <div id="projects" class="menu-item">
+        <a class="<% if(active == "projects") { %> active <% } else { %> inactive <% }%>" href="/projects">PROJECTS</a>
+    </div>
+    <div id="contact" class="menu-item">
+        <a class="<% if(active == "contact") { %> active <% } else { %> inactive <% }%>" href="/contact">CONTACT</a>
+    </div>
+</div>
+
+<script>
+    function changeToHome() {
+        window.location.replace("/");
+    }
+</script>

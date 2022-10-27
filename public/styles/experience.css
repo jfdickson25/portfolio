@@ -1,6 +1,32 @@
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .experienceImg {
-        max-height: 100px;
-    }
-  }
+p {
+    font-size: 14pt;
+}
+
+.content {
+    justify-items: center;
+    align-items: center;
+}
+
+.job-img {
+    grid-column: 5/8;
+    width: 80%;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 5px #8E8D8A;
+}
+
+.job-text {
+    grid-column: 9/14;
+    width: 100%;
+}
+
+.sub-header {
+    color: #8E8D8A;
+    font-weight: bold;
+    font-size: 16pt;
+    margin-bottom: 0;
+}
+
+.text {
+    margin-bottom: 30px;
+}

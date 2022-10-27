@@ -1,19 +1,41 @@
-p {
-    padding: 5px;
+#molly-and-me-pic {
+    grid-column: 5/8;
+    width: 100%;
 }
 
-.sectionRight {
-    background-color: white;
-    border: 1px solid silver;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 5px 5px 10px #343a40;
+h1 {
+    text-align: center;
 }
 
-.sectionLeft {
-    background-color: white;
-    border: 1px solid silver;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: -5px 5px 10px #343a40;
+.content {
+    align-items: center;
+    justify-items: center;
+}
+
+#me-img {
+    grid-column: 7/12;
+    width: 100%;
+    margin-bottom: 100px;
+    transition: 2s ease;
+}
+
+#about-text {
+    grid-column: 7/12;
+}
+
+#description {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 30px;
+    margin-bottom: 0px;
+}
+
+#spruce-1 {
+    grid-column: 3/6;
+    width: 70%;
+}
+
+#spruce-2 {
+    grid-column: 13/16;
+    width: 70%;
 }

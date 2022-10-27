@@ -1,0 +1,20 @@
+@media (min-width:1025px) { 
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        margin-top: 100px;
+    }
+
+    #copyright {
+        grid-column: 1/13;
+        grid-row: 2;
+        padding-bottom: 20px;
+    }
+}

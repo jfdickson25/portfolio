@@ -1,0 +1,52 @@
+        <%- include('../includes/header'); %>
+        <link rel="stylesheet" href="/styles/projects.css">
+        <title><%=title%></title>
+    </head>
+    <body>
+
+        <%- include('../includes/menu'); %>
+
+        <div class="content">
+            <a href="/projects/whereToWatch" id="where-to-watch" class="project-section"></a>
+            <a href="/projects/weeklyGoals" id="weekly-goals" class="project-section"></a>
+            <a href="/projects/ourLists" id="our-lists" class="project-section"></a>
+        </div>
+
+    </body>
+
+    <script>
+        let whereToWatch = document.getElementById('where-to-watch');
+        let weeklyGoals = document.getElementById('weekly-goals');
+        let ourLists = document.getElementById('our-lists');
+
+        whereToWatch.addEventListener('mouseover', function() {
+            weeklyGoals.style.transform = "scale(.6)";
+            ourLists.style.transform = "scale(.6)";
+        });
+
+        whereToWatch.addEventListener('mouseleave', function() {
+            weeklyGoals.style.transform = "scale(1)";
+            ourLists.style.transform = "scale(1)";
+        });
+
+        weeklyGoals.addEventListener('mouseover', function() {
+            whereToWatch.style.transform = "scale(.6)";
+            ourLists.style.transform = "scale(.6)";
+        });
+
+        weeklyGoals.addEventListener('mouseleave', function() {
+            whereToWatch.style.transform = "scale(1)";
+            ourLists.style.transform = "scale(1)";
+        });
+
+        ourLists.addEventListener('mouseover', function() {
+            whereToWatch.style.transform = "scale(.6)";
+            weeklyGoals.style.transform = "scale(.6)";
+        });
+
+        ourLists.addEventListener('mouseleave', function() {
+            whereToWatch.style.transform = "scale(1)";
+            weeklyGoals.style.transform = "scale(1)";
+        });
+    </script>
+</html>

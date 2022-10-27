@@ -1,0 +1,23 @@
+        <%- include('../includes/header'); %>
+        <link rel="stylesheet" href="/styles/project.css">
+        <title><%=title%></title>
+    </head>
+    <body>
+
+        <%- include('../includes/menu'); %>
+
+        <div class="content">
+            <img id="project-img" src="<%=projectImg%>" alt="Project Image in Iphone">
+            <div id="description">
+                <h1><%=header%></h1>
+                <p class="sub-header">Overview</p>
+                <p class="text"><%-overview%></p>
+                <p class="sub-header">Technologies Used</p>
+                <p class="text center-text"><%=tech%></p>
+                <p class="sub-header">Link</p>
+                <a class="center-text" href="<%=link%>"><%=linkName%></a>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EAE7DC;
+}
+
+a {
+    color: #E98074;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    Font-Family: 'Cabin', Sans-Serif;
+    font-weight: bold;
+}
+
+h1 {
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 35px;
+    color: #E85A4F;
+}
+
+p {
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 14pt;
+    color: #25252A;
+}
+
+small {
+    Font-Family: 'Cabin', Sans-Serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    margin-bottom: 100px;
+}
