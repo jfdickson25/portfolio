@@ -11,32 +11,50 @@
 
         <div class="content">
             <div id="contact-info">
-                <h1 id="name-title">Name</h1>
-                <input type="text" id="name">
-                <h1 id="name-title">Email</h1>
-                <input type="text" id="email">
-                <h1 id="msg-title">Message</h1>
+                <div class="info-section">
+                    <h1 id="name-title">Name</h1>
+                    <input type="text" id="name">
+                    <h1 id="email-title">Email</h1>
+                    <input type="text" id="email">
+                </div>
                 <textarea name="message" id="msg" cols="30" rows="10"></textarea>
                 <button id="send-email">
                     Send Message
                 </button>
+                <p id="send-msg"></p>
             </div>
         </div>
 
     </body>
     <script>
-        document.getElementById('send-email').addEventListener('click', () => {
+        document.getElementById('send-email').addEventListener('click', async () => {
             let name = document.getElementById('name').value;
             let email = document.getElementById('email').value;
             let msg = document.getElementById('msg').value;
 
-            console.log(`${name}, ${email}, ${msg}`);
+            let sendMsg = document.getElementById('send-msg');
 
-            axios.post('/contact/message', {
-                name: name,
-                email: email,
-                msg: msg
-            });
+            if(name !== "" && msg !== "") {
+                let response = await axios.post('/contact/message', {
+                    name: name,
+                    email: email,
+                    msg: msg
+                });
+
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('msg').value = "";
+
+                let sendMsg = document.getElementById('send-msg');
+
+                if(response.data) {
+                    sendMsg.innerHTML = "Message Sent!"
+                } else {
+                    sendMsg.innerHTML = "Error sending message"
+                }
+            } else {
+                sendMsg.innerHTML = "Please enter your name and a message"
+            }
         });
     </script>
 </html>

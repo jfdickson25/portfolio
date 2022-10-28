@@ -12,7 +12,6 @@ router
         });
     })
     .post('/message', (req, res, next) => {
-        console.log(req.body);
         let name = req.body.name;
         let email = req.body.email;
         let msg = req.body.msg;
@@ -21,7 +20,7 @@ router
             service: 'gmail',
             auth: {
               user: 'jfdickson25@gmail.com',
-              pass: 'Oz2@Pw6NX*zL7&iE'
+              pass: 'qyesxoyvjzdvcgsz'
             }
           });
           
@@ -34,9 +33,9 @@ router
           
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
-                console.log(error);
+                res.send(false);
             } else {
-                console.log('Email sent: ' + info.response);
+                res.send(true);
             }
         });
           
