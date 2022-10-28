@@ -1,0 +1,23 @@
+#contact-info {
+    grid-column: 5/14;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+input {
+    width: 30%;
+    border: solid 2px #8E8D8A;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 100%;
+    border: solid 2px #8E8D8A;
+    border-radius: 3px;
+}
+
+button {
+    width: 30%;
+    margin-top: 30px;
+}

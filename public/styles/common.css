@@ -25,6 +25,19 @@ p {
     color: #25252A;
 }
 
+button {
+    background-color: #E85A4F;
+    color: white;
+    border: solid 2px #E98074;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 16pt;
+}
+
+button:focus {
+    border: solid 2px #25252A;
+}
+
 small {
     Font-Family: 'Cabin', Sans-Serif;
 }

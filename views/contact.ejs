@@ -1,9 +1,42 @@
             <%- include('includes/header'); %>
+            <link rel="stylesheet" href="/styles/contact.css">
+            
+            <!-- Axios -->
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
             <title><%=title%></title>
         </head>
     <body>
 
         <%- include('includes/menu'); %>
 
+        <div class="content">
+            <div id="contact-info">
+                <h1 id="name-title">Name</h1>
+                <input type="text" id="name">
+                <h1 id="name-title">Email</h1>
+                <input type="text" id="email">
+                <h1 id="msg-title">Message</h1>
+                <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+                <button id="send-email">
+                    Send Message
+                </button>
+            </div>
+        </div>
+
     </body>
+    <script>
+        document.getElementById('send-email').addEventListener('click', () => {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let msg = document.getElementById('msg').value;
+
+            console.log(`${name}, ${email}, ${msg}`);
+
+            axios.post('/contact/message', {
+                name: name,
+                email: email,
+                msg: msg
+            });
+        });
+    </script>
 </html>

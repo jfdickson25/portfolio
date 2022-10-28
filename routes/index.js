@@ -4,24 +4,15 @@ const router = express.Router();
 const home = require('./home');
 const about = require('./about');
 const projects = require('./projects');
+const contact = require('./contact')
+const experience = require('./experience');
 
 // set default route and content
 router
     .use('/', home)
     .use('/about', about)
-    .use('/projects', projects);
-
-router.get('/contact', (req, res, next) => {
-    res.render('contact', {
-        title: "Contact",
-        active: "contact"
-    });
-});
-router.get('/experience', (req, res, next) => {
-    res.render('experience', {
-        title: "Experience",
-        active: "experience"
-    });
-});
+    .use('/projects', projects)
+    .use('/contact', contact)
+    .use('/experience', experience);
 
 module.exports = router;
