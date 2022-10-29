@@ -30,3 +30,17 @@ p {
 .text {
     margin-bottom: 30px;
 }
+
+@media (max-width:820px) { 
+    h1 {
+        text-align: center;
+    }
+
+    .job-img {
+        grid-column: 5/14;
+    }
+
+    .job-text {
+        grid-column: 3/16;
+    }
+}

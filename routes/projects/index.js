@@ -15,7 +15,7 @@ router
             active: "projects",
             projectImg: "/img/projects/where-to-watch-iphone.png",
             header: "Where to Watch",
-            overview: "Web application for searching where movies and television shows can be viewed with a subscription. " +
+            overview: "Web application for searching where movies and television shows that can be viewed with a subscription. " +
             "This app is a backend application using EJS as a template for creating components to display HMTL with the flexability " +
             "of using Javascript logic.<br><br>This application is also a PWA (Progressive web application) so it can be downloaded " +
             "and used as if it were a mobile application.",

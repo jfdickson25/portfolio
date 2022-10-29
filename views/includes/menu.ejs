@@ -26,12 +26,12 @@
 
     /* Open when someone clicks on the span element */
     function openNav() {
-        if(document.documentElement.clientWidth < 1025)
+        if(document.documentElement.clientWidth <= 820)
             document.getElementById("menu-container").style.width = "100vw";
     }
 
     document.getElementById('menu-container').addEventListener('click', () => {
-        if(document.documentElement.clientWidth < 1025)
+        if(document.documentElement.clientWidth <= 820)
             document.getElementById("menu-container").style.width = "0";
     });
 </script>
