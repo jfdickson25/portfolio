@@ -3,7 +3,7 @@ const router = express.Router();
 
 // set default route and content
 router.get('/', (req, res, next) => {
-    res.render('home', {
+    res.status(200).render('home', {
         title: "Home",
         active: "home"
     });
