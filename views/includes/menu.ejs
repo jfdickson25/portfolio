@@ -1,24 +1,37 @@
-
-<div id="menu">
-    <div id="about" class="menu-item">
-        <a class="<% if(active == "about") { %> active <% } else { %> inactive <% }%>" href="/about">ABOUT</a>
-    </div>
-    <div id="experience" class="menu-item">
-        <a class="<% if(active == "experience") { %> active <% } else { %> inactive <% }%>" href="/experience">EXPERIENCE</a>
-    </div>
-    <div id="home">
-        <p onclick="changeToHome()" id="jordan-header">Jordan Dickson</p>
-    </div>
-    <div id="projects" class="menu-item">
-        <a class="<% if(active == "projects") { %> active <% } else { %> inactive <% }%>" href="/projects">PROJECTS</a>
-    </div>
-    <div id="contact" class="menu-item">
-        <a class="<% if(active == "contact") { %> active <% } else { %> inactive <% }%>" href="/contact">CONTACT</a>
+<div id="menu-container">
+    <div id="menu">
+        <div id="about" class="menu-item">
+            <a class="<% if(active == "about") { %> active <% } else { %> inactive <% }%>" href="/about">ABOUT</a>
+        </div>
+        <div id="experience" class="menu-item">
+            <a class="<% if(active == "experience") { %> active <% } else { %> inactive <% }%>" href="/experience">EXPERIENCE</a>
+        </div>
+        <div id="home">
+            <p onclick="changeToHome()" id="jordan-header">Jordan Dickson</p>
+        </div>
+        <div id="projects" class="menu-item">
+            <a class="<% if(active == "projects") { %> active <% } else { %> inactive <% }%>" href="/projects">PROJECTS</a>
+        </div>
+        <div id="contact" class="menu-item">
+            <a class="<% if(active == "contact") { %> active <% } else { %> inactive <% }%>" href="/contact">CONTACT</a>
+        </div>
     </div>
 </div>
+<img src="/img/menu/menu.png" alt="menu hamburger icon" id="menu-icon" onclick="openNav()">
 
 <script>
     function changeToHome() {
         window.location.replace("/");
     }
+
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        if(document.documentElement.clientWidth < 1025)
+            document.getElementById("menu-container").style.width = "100vw";
+    }
+
+    document.getElementById('menu-container').addEventListener('click', () => {
+        if(document.documentElement.clientWidth < 1025)
+            document.getElementById("menu-container").style.width = "0";
+    });
 </script>
