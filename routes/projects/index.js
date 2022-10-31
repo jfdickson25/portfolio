@@ -4,13 +4,13 @@ const router = express.Router();
 // set default route and content
 router
     .get('/', (req, res, next) => {
-        res.status(200).render('projects/projects', {
+        res.render('projects/projects', {
             title: "Projects",
             active: "projects"
         });
     })
     .get('/whereToWatch', (req, res, next) => {
-        res.status(200).render('projects/project', {
+        res.render('projects/project', {
             title: "Where to Watch",
             active: "projects",
             projectImg: "/img/projects/where-to-watch-iphone.png",
@@ -25,7 +25,7 @@ router
         });
     })
     .get('/weeklyGoals', (req, res, next) => {
-        res.status(200).render('projects/project', {
+        res.render('projects/project', {
             title: "Weekly Goals",
             active: "projects",
             projectImg: "/img/projects/weekly-goals-iphone.png",
@@ -42,7 +42,7 @@ router
         });
     })
     .get('/ourLists', (req, res, next) => {
-        res.status(200).render('projects/project', {
+        res.render('projects/project', {
             title: "Our Lists",
             active: "projects",
             projectImg: "/img/projects/our-lists-iphone.png",

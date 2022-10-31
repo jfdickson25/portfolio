@@ -4,7 +4,7 @@ const router = express.Router();
 // set default route and content
 router
     .get('/', (req, res, next) => {
-        res.status(200).render('about', {
+        res.render('about', {
             title: "About",
             active: "about"
         });

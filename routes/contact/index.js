@@ -6,7 +6,7 @@ let nodemailer = require('nodemailer');
 
 router
     .get('/', (req, res, next) => {
-        res.status(200).render('contact', {
+        res.render('contact', {
             title: "Contact",
             active: "contact"
         });
@@ -33,9 +33,9 @@ router
           
         transporter.sendMail(mailOptions, function(error, info){
             if (error) {
-                res.status(500).send(false);
+                res.send(false);
             } else {
-                res.status(200).send(true);
+                res.send(true);
             }
         });
           

@@ -3,7 +3,7 @@ const router = express.Router();
 
 router
     .get('/', (req, res, next) => {
-        res.status(200).render('experience', {
+        res.render('experience', {
             title: "Experience",
             active: "experience"
         });
