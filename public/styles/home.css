@@ -5,8 +5,17 @@
 
 #pic-of-me {
     grid-column: 5/10;
-    background-color: #EAE7DC;
-    width: 80%;
+    grid-row: 1;
+    width: 70%;
+    z-index: 2;
+}
+
+.blob-motion {
+    grid-column: 5/10;
+    grid-row: 1;
+    z-index: 1;
+    width: 100%;
+    height: auto;
 }
 
 .text {
@@ -17,7 +26,15 @@
     #pic-of-me {
         grid-column: 2/17;
         width: 100%;
+        z-index: 2;
+    }
 
+    .blob-motion {
+        grid-column: 2/17;
+        grid-row: 1;
+        z-index: 1;
+        width: 100%;
+        height: auto;
     }
     
     .text {

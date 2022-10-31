@@ -3,15 +3,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    
-    
-        <title><%=title%></title>
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+    <title><%=title%></title>
     </head>
+
     <body>
 
         <%- include('includes/menu'); %>
 
         <div class="content">
+            <svg class="blob-motion" id="visual" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <rect x="0" y="0" width="900" height="900" fill="#EAE7DC"></rect>
+                <g transform="translate(448.5438437903642 414.9584215799914)">
+                    <path id="blob1"
+                        d="M190.7 -192.7C241.3 -140 272.7 -70 269.7 -2.9C266.8 64.1 229.6 128.2 178.9 190.9C128.2 253.6 64.1 314.8 -21 335.8C-106.1 356.7 -212.1 337.5 -249.6 274.8C-287.1 212.1 -256.1 106.1 -230 26C-204 -54 -183 -108 -145.5 -160.6C-108 -213.3 -54 -264.6 8 -272.7C70 -280.7 140 -245.3 190.7 -192.7"
+                        fill="#E85A4F"></path>
+                </g>
+                <g transform="translate(425.6837566772039 463.72540561313247)" style="visibility: hidden;">
+                    <path id="blob2"
+                        d="M185.5 -149.7C258.9 -112.2 349.4 -56.1 362.9 13.4C376.3 83 312.6 165.9 239.3 205.1C165.9 244.3 83 239.6 0.5 239.2C-82 238.7 -164 242.4 -218 203.2C-272 164 -298 82 -310 -12C-322.1 -106.1 -320.1 -212.1 -266.1 -249.6C-212.1 -287.1 -106.1 -256.1 -25 -231.1C56.1 -206.1 112.2 -187.2 185.5 -149.7"
+                        fill="#E85A4F"></path>
+                </g>
+            </svg>
             <img id="pic-of-me" src="/img/home/me.png" alt="Jordan Dickson">
             <div class="text">
                 <h1>
@@ -26,4 +41,20 @@
             </div>
         </div>
     </body>
-</html>
+    <script>
+        const tween = KUTE.fromTo(
+            '#blob1', {
+                path: '#blob1'
+            }, {
+                path: '#blob2'
+            }, {
+                repeat: 999,
+                duration: 3000,
+                yoyo: true
+            }
+        );
+
+        tween.start();
+    </script>
+
+    </html>
