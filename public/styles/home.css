@@ -3,13 +3,6 @@
     align-items: center;
 }
 
-#pic-of-me {
-    grid-column: 5/10;
-    grid-row: 1;
-    width: 70%;
-    z-index: 2;
-}
-
 .blob-motion {
     grid-column: 5/10;
     grid-row: 1;
@@ -22,7 +15,39 @@
     grid-column: 10/14;
 }
 
+.icon-link {
+  margin-bottom: 10px;
+}
+
+#pic-of-me {
+    grid-column: 5/10;
+    grid-row: 1;
+    width: 70%;
+    z-index: 2;
+}
+
+#icon-attribute {
+  color: #8E8D8A;
+  text-decoration: underline;
+}
+
+#icon-attribute:hover {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
 @media (max-width:820px) { 
+    .icon-link a {
+      font-size: 10pt;
+    }
+  
     #pic-of-me {
         grid-column: 2/17;
         width: 100%;

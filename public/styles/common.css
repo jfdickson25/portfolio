@@ -13,6 +13,11 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #E98074;
+}
+
 h1 {
     Font-Family: 'Roboto Condensed', Sans-Serif;
     Font-Size: 35px;
