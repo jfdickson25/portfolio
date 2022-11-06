@@ -43,4 +43,8 @@ p {
     .job-text {
         grid-column: 3/16;
     }
+
+    .automatedStats {
+        font-size: 12pt;
+    }
 }
