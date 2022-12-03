@@ -45,7 +45,7 @@ router
         res.render('projects/project', {
             title: "Our Lists",
             active: "projects",
-            projectImg: "/img/projects/our-lists-iphone.png",
+            projectImg: "/img/projects/our-lists.png",
             header: "Our Lists",
             overview: "A web application for sharing lists across users. The user can create lists " +
             "afterwhich they will receive a share code. With this share code another user can join their " +

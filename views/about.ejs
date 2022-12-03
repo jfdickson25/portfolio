@@ -7,7 +7,6 @@
         <%- include('includes/menu'); %>
 
         <div class="content">
-            <img src="/img/about/me.svg" alt="Vector art of me" id="me-img">
             <img id="mountain" src="/img/about/mountain-trees.png" alt="Mountain">
             <div id="about-text">
                 <h1>About Me</h1>
@@ -22,14 +21,4 @@
         </div>
 
     </body>
-
-    <script>
-        window.onscroll = function() {
-            var img = document.getElementById('me-img');
-            if ( window.pageYOffset > 30 ) {
-                img.style.width = "0%";
-                img.style.marginBottom = "20px";
-            }
-        }
-    </script>
 </html>
