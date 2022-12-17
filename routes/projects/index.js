@@ -21,7 +21,7 @@ router
             "and used as if it were a mobile application.",
             tech: "Node, Express, EJS, PWA",
             linkName: "Where to Watch",
-            link: "https://where-to-watch.onrender.com"
+            link: "https://where-to-watch.glitch.me/"
         });
     })
     .get('/weeklyGoals', (req, res, next) => {
@@ -45,15 +45,15 @@ router
         res.render('projects/project', {
             title: "Our Lists",
             active: "projects",
-            projectImg: "/img/projects/our-lists-iphone.png",
+            projectImg: "/img/projects/our-lists.png",
             header: "Our Lists",
             overview: "A web application for sharing lists across users. The user can create lists " +
             "afterwhich they will receive a share code. With this share code another user can join their " +
             "list.<br><br>This application uses Socket.io for communicating changes to a list between devices. " +
-            "changes that one user makes will be seen without refreshing to page on another users device.",
+            "changes that one user makes will be seen without refreshing the page on another users device.",
             tech: "Node, Express, EJS, PWA, MongoDB, Socket.io",
             linkName: "Our Lists",
-            link: "https://our-lists.onrender.com"
+            link: "https://our-lists.glitch.me/"
         });
     })
 
