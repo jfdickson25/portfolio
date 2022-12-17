@@ -1,70 +1,46 @@
-h1 {
-    text-align: center;
-    margin-bottom: 0;
-}
-
 .content {
-    align-items: center;
     justify-items: center;
-    margin-bottom: 0;
+    align-items: center;
 }
 
-#about-text {
+#about-content {
     grid-column: 6/13;
-    background-color: rgba(255, 255, 255, 0.39);
-    border-radius: 0 0 20px 20px;
-    z-index: 1;
+    height: 32vw;
+    background-image: url('/img/about/cloud-3.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    justify-items: center;
+}
+
+h1 {
+    align-self: flex-end;
+    text-align: center;
 }
 
 #description {
-    padding: 50px;
-    padding-top: 20px;
-    margin-bottom: 0px;
-    margin-top: 0;
+    align-self: flex-start;
+    width: 50%;
 }
 
-#mountain {
-    grid-column: 6/13;
-    width: 100%;
-    padding-top: 10vh;
+@media (max-width:1400px) { 
+    #about-content {
+        grid-column: 4/15;
+        height: 50vw;
+    }
 }
 
 @media (max-width:900px) { 
-    .content {
-        margin-top: 30px;
+    #about-content {
+        grid-column: 1/18;
+        height: 75vw;
     }
 
     h1 {
-      grid-column: 1/18;
-      margin-top: 25px;
-      margin-bottom: 25px;
+        font-size: 14pt;
     }
 
-  #about-text {
-        grid-column: 2/17;
-        background-color: rgba(255, 255, 255, 0.39);
-        display: grid;
-        grid-template-columns: repeat(17, 1fr);
-        justify-content: center;
-        align-items: center;
-        border-radius: 0;
-    }
-  
     #description {
-      background-color: rgba(255, 255, 255, 0);
-      grid-column: 2/17;
-      border-radius: 0;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      padding-bottom: 50px;
-      font-size: 14pt;
+        font-size: 10pt;
     }
-
-    #mountain {
-        grid-column: 1/18;
-        display: inline-block;
-        width: 100%;
-    }
-
 }
