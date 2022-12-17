@@ -68,7 +68,7 @@ footer {
   }
 }
 
-@media (max-width:900px) { 
+@media (max-width:900px) {
     .icon-link a {
       font-size: 10pt;
     }
@@ -91,4 +91,29 @@ footer {
         grid-column: 3/16;
         text-align: center;
     }
+}
+
+@media (max-width:1200px) { 
+  .icon-link a {
+    font-size: 10pt;
+  }
+
+  #pic-of-me {
+      grid-column: 5/14;
+      width: 100%;
+      z-index: 2;
+  }
+
+  .blob-motion {
+      grid-column: 5/14;
+      grid-row: 1;
+      z-index: 1;
+      width: 100%;
+      height: auto;
+  }
+  
+  .text {
+      grid-column: 3/16;
+      text-align: center;
+  }
 }
