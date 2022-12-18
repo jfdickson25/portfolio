@@ -10,13 +10,16 @@ img {
 
 h1 {
     grid-column: 1/18;
-    border-top: solid 5px #E85A4F;
-    border-bottom: solid 5px #E85A4F;
+    margin-top: 0;
 }
 
 #description {
     grid-column: 1/18;
     width: 30%;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 20px;
+    padding: 30px;
 }
 
 @media (max-width:900px) {

@@ -28,6 +28,8 @@ a {
     font-family: 'Pacifico', cursive;
     font-size: 28pt;
     color: #8E8D8A;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #jordan-header:hover {
