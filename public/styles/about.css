@@ -3,44 +3,33 @@
     align-items: center;
 }
 
-#about-content {
-    grid-column: 6/13;
-    height: 32vw;
-    background-image: url('/img/about/cloud-3.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: grid;
-    justify-items: center;
+img {
+    grid-column: 8/11;
+    width: 100%;
 }
 
 h1 {
-    align-self: flex-end;
-    text-align: center;
+    grid-column: 1/18;
+    border-top: solid 5px #E85A4F;
+    border-bottom: solid 5px #E85A4F;
 }
 
 #description {
-    align-self: flex-start;
-    width: 50%;
+    grid-column: 1/18;
+    width: 30%;
 }
 
-@media (max-width:1400px) { 
-    #about-content {
+@media (max-width:900px) {
+    img {
         grid-column: 4/15;
-        height: 50vw;
     }
-}
-
-@media (max-width:900px) { 
-    #about-content {
-        grid-column: 1/18;
-        height: 75vw;
-    }
-
+    
     h1 {
-        font-size: 14pt;
+        grid-column: 1/18;
     }
-
+    
     #description {
-        font-size: 10pt;
+        grid-column: 2/17;
+        width: 80%;
     }
 }
